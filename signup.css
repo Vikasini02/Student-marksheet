@@ -1,0 +1,94 @@
+/* body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpM3Tzb2X3jGiTgEgZ1b_T2XXpKTNafK9eA&usqp=CAU");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Varela Round', sans-serif;
+    overflow-y:auto;
+}
+.box{
+    width:390px;
+    height:520px;
+    background-image:linear-gradient(#FF512F,#DD2476);
+} */
+
+
+
+
+
+*{
+    color:darkblue;
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpM3Tzb2X3jGiTgEgZ1b_T2XXpKTNafK9eA&usqp=CAU");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+        h1{
+            text-align:center;
+            margin-top: 50px;
+            padding-top:30px;
+        }
+        .container{
+            margin-left:390px;
+            width:350px;
+            height:400px;
+            box-shadow: 14px 10px 75px 0px black;
+        }
+        .f{
+            margin-left:60px;
+            border:none;
+            outline:none;
+            background:none;
+            font-size:18px;
+            border-bottom:2px solid black;
+        }
+        .radio{
+            padding-left:70px;
+        }
+        .btt{
+            margin-top:10px;
+            padding:10px;
+            font-size:16px;
+            margin-left: 60px;
+            border-radius: 20px;
+            border:none;
+            outline:none;
+            color:white;
+            background-image:linear-gradient(to right,black,darkblue);
+        
+        }
+        ::placeholder{
+            font-size:15px;
+            color:darkblue;
+        }
+        .eye{
+            position: absolute;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        .eyec{
+            position: absolute;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        #hide1{
+            display: none;
+        }
+        #hide3{
+            display:none;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        input{
+            padding-left:10px;
+            color:darkblue;
+        }
+        .fa {
+            margin-left:-20px;
+            position:absolute;
+        }
