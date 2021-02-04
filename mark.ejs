@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marksheet</title>
+        <link rel="stylesheet" href="/public/css/mark.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Bodoni+Moda&family=Bree+Serif&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>MARKS</h1>
+        <table>
+            <tr>
+                <th>Roll no</th>
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>Sub-1</th>
+                <th>Sub-2</th>
+                <th>Sub-3</th>
+                <th>Average</th>
+            </tr>
+            <% if(userdata.length !=0){%>
+            <%var i=1;%>
+            <%userdata.forEach(function(data){%>
+            <tr>
+                <td><%=data.Rollno %></td>
+                <td><%=data.Name %></td>
+                <td><%=data.email %></td>
+                <td><%=data.Sub1 %></td>
+                <td><%=data.Sub2 %></td>
+                <td><%=data.Sub3 %></td>
+                <td><%=Math.round((data.Sub1+data.Sub2+data.Sub3)/3)%></td>
+            </tr>
+            <%i++;})%>
+            <%}else{%>
+            <tr>
+                <td colspan="7">No Records</td>
+            </tr>
+        <%}%> 
+        </table>
+    </body>
+</html>

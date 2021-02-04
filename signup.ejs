@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../public/css/signup.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="/signupv" method="post" name="myform" >
+              <div class="form">
+                <h1>Sign Up</h1>
+              <p><input type="text" name="name" placeholder="Name" class="f" id="name" required><i class="fa fa-user"></i></p>
+              <p><input id="numb" name="rollno" placeholder="Roll Number"  class="f"  required><i class="fa fa-id-card"></i></p>
+              <p><input type="email" name="email" placeholder="E-mail" class="f" id="email" required><i class="fa fa-envelope"></i></p>
+              <p><input type="password" name="password" placeholder="Password" class="f" id="eyep" required>
+                <span class="eye" onclick="myFunction()">
+                    <i  id="hide1" class="fa fa-eye"></i>
+                    <i id="hide2" class="fa fa-eye-slash"></i>
+                </span></p>
+              <p><input type="password" name="cpassword" placeholder="Confirm Password" class="f" id="eyepc" required>
+                <span class="eyec" onclick="myFunctionc()">
+                    <i id="hide3" class="fa fa-eye"></i>
+                    <i id="hide4" class="fa fa-eye-slash"></i>
+                </span>  
+            </p>
+              </div>
+              <p class="radio" required>Gender:<input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others
+            </p>
+              <button type="submit" class="btt" onclick="validate()">SIGN UP</button>
+            <button type="submit"class="btt"><a href="/login">LOG IN</a></button>
+        </form>  
+        </div>
+        <script src="../public/js/signup.js"></script>
+    </body>
+    </html>
